@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PriceIQ — AI-Based Used Smartphone Price Prediction
 
 > **"From Data to Price."**
@@ -276,3 +277,6 @@ The dataset is synthetic, small (122 records), and prices may not reflect real m
 
 **Q19. How can the project be improved?**
 By using a larger real-world dataset, integrating live market data, adding more models and brands, trying better algorithms like XGBoost, and deploying to a cloud platform.
+=======
+# PriceIQ
+>>>>>>> 38e15aa40edbd72dd4abf35e25ebc1eb468672f3
