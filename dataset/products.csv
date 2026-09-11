@@ -1,0 +1,123 @@
+brand,model,ram_gb,storage_gb,age_years,battery_health,condition,original_price,resale_price
+Apple,iPhone 15 Pro,8,256,1,95,Excellent,134900,105000
+Apple,iPhone 15 Pro,8,512,1,92,Good,149900,112000
+Apple,iPhone 15,6,128,1,94,Excellent,79900,65000
+Apple,iPhone 15,6,256,1,90,Good,89900,70000
+Apple,iPhone 14 Pro,6,256,2,88,Excellent,129900,85000
+Apple,iPhone 14 Pro,6,256,2,82,Good,129900,72000
+Apple,iPhone 14 Pro,6,128,2,78,Fair,119900,60000
+Apple,iPhone 14,6,128,2,87,Excellent,79900,55000
+Apple,iPhone 14,6,128,2,80,Good,79900,46000
+Apple,iPhone 14,6,256,2,75,Fair,89900,38000
+Apple,iPhone 13,4,128,3,85,Excellent,69900,42000
+Apple,iPhone 13,4,128,3,80,Good,69900,35000
+Apple,iPhone 13,4,256,3,75,Fair,79900,28000
+Apple,iPhone 13,4,128,3,65,Poor,69900,20000
+Apple,iPhone 13 Pro,6,256,3,83,Excellent,119900,62000
+Apple,iPhone 13 Pro,6,256,3,76,Good,119900,50000
+Apple,iPhone 12,4,64,4,78,Good,59900,25000
+Apple,iPhone 12,4,128,4,72,Fair,69900,20000
+Apple,iPhone 12,4,64,4,60,Poor,59900,13000
+Apple,iPhone 11,4,64,5,70,Good,54900,18000
+Apple,iPhone 11,4,128,5,65,Fair,64900,15000
+Apple,iPhone 11,4,64,5,55,Poor,54900,10000
+Apple,iPhone SE 2022,4,64,2,88,Excellent,43900,30000
+Apple,iPhone SE 2022,4,128,2,82,Good,53900,35000
+Samsung,Galaxy S24 Ultra,12,256,1,96,Excellent,134999,108000
+Samsung,Galaxy S24 Ultra,12,512,1,93,Good,154999,118000
+Samsung,Galaxy S24,8,256,1,94,Excellent,79999,63000
+Samsung,Galaxy S24,8,128,1,90,Good,74999,56000
+Samsung,Galaxy S23 Ultra,12,256,2,89,Excellent,124999,82000
+Samsung,Galaxy S23 Ultra,12,256,2,83,Good,124999,68000
+Samsung,Galaxy S23 Ultra,12,512,2,78,Fair,144999,58000
+Samsung,Galaxy S23,8,128,2,87,Excellent,74999,48000
+Samsung,Galaxy S23,8,256,2,81,Good,84999,40000
+Samsung,Galaxy S23,8,128,2,74,Fair,74999,32000
+Samsung,Galaxy S22,8,128,3,82,Excellent,72999,38000
+Samsung,Galaxy S22,8,256,3,76,Good,82999,32000
+Samsung,Galaxy S22,8,128,3,68,Fair,72999,24000
+Samsung,Galaxy S21,8,128,4,74,Good,69999,25000
+Samsung,Galaxy S21,8,256,4,66,Fair,79999,20000
+Samsung,Galaxy S21,8,128,4,55,Poor,69999,13000
+Samsung,Galaxy A54,8,128,2,85,Excellent,38999,26000
+Samsung,Galaxy A54,8,256,2,80,Good,43999,30000
+Samsung,Galaxy A54,6,128,2,75,Fair,38999,20000
+Samsung,Galaxy A34,8,128,2,83,Good,30999,20000
+Samsung,Galaxy A34,6,128,3,74,Fair,28999,14000
+Samsung,Galaxy A14,4,64,2,80,Good,14999,9000
+Samsung,Galaxy A14,4,128,2,75,Fair,16999,7000
+Samsung,Galaxy M34,8,128,2,82,Good,18999,12000
+Samsung,Galaxy M34,6,128,3,72,Fair,17999,8000
+OnePlus,OnePlus 12,16,256,1,95,Excellent,64999,52000
+OnePlus,OnePlus 12,12,256,1,91,Good,59999,46000
+OnePlus,OnePlus 11,16,256,2,88,Excellent,56999,38000
+OnePlus,OnePlus 11,8,128,2,82,Good,49999,30000
+OnePlus,OnePlus 11,8,256,2,76,Fair,54999,24000
+OnePlus,OnePlus 10 Pro,12,256,3,80,Good,66999,28000
+OnePlus,OnePlus 10 Pro,8,128,3,72,Fair,59999,20000
+OnePlus,OnePlus 10 Pro,8,256,3,62,Poor,66999,14000
+OnePlus,OnePlus 9,8,128,4,70,Good,49999,18000
+OnePlus,OnePlus 9,8,256,4,62,Fair,54999,14000
+OnePlus,OnePlus Nord 3,8,128,2,84,Good,33999,22000
+OnePlus,OnePlus Nord 3,8,256,2,79,Fair,37999,18000
+OnePlus,OnePlus Nord CE 3,8,128,2,82,Good,26999,17000
+OnePlus,OnePlus Nord CE 3,6,128,3,72,Fair,24999,11000
+Xiaomi,Xiaomi 14,12,256,1,94,Excellent,69999,56000
+Xiaomi,Xiaomi 14,8,256,1,90,Good,64999,50000
+Xiaomi,Xiaomi 13,12,256,2,87,Excellent,54999,36000
+Xiaomi,Xiaomi 13,8,128,2,81,Good,49999,28000
+Xiaomi,Redmi Note 13 Pro,8,256,1,92,Excellent,26999,20000
+Xiaomi,Redmi Note 13 Pro,8,128,1,88,Good,23999,17000
+Xiaomi,Redmi Note 13 Pro,6,128,2,80,Fair,21999,12000
+Xiaomi,Redmi Note 12,6,128,2,82,Good,17999,11000
+Xiaomi,Redmi Note 12,4,128,3,72,Fair,15999,7000
+Xiaomi,Redmi 12,4,128,2,80,Good,12999,8000
+Xiaomi,Redmi 12,4,64,3,70,Fair,10999,5000
+Xiaomi,POCO X6 Pro,12,256,1,93,Excellent,26999,21000
+Xiaomi,POCO X6 Pro,8,256,1,89,Good,23999,18000
+Xiaomi,POCO X5 Pro,8,256,2,84,Good,22999,14000
+Xiaomi,POCO X5 Pro,6,128,3,74,Fair,19999,9000
+Google,Pixel 8 Pro,12,256,1,95,Excellent,106999,85000
+Google,Pixel 8 Pro,12,512,1,92,Good,116999,90000
+Google,Pixel 8,8,128,1,93,Excellent,75999,60000
+Google,Pixel 8,8,256,1,89,Good,85999,65000
+Google,Pixel 7 Pro,12,256,2,87,Excellent,84999,55000
+Google,Pixel 7 Pro,12,128,2,81,Good,79999,46000
+Google,Pixel 7 Pro,12,256,2,74,Fair,84999,36000
+Google,Pixel 7,8,128,2,85,Good,59999,36000
+Google,Pixel 7,8,256,2,78,Fair,69999,28000
+Google,Pixel 6a,6,128,3,78,Good,43999,22000
+Google,Pixel 6a,6,128,3,68,Fair,43999,16000
+Google,Pixel 6a,6,128,4,58,Poor,43999,10000
+Realme,Realme GT 5 Pro,16,256,1,94,Excellent,41999,33000
+Realme,Realme GT 5 Pro,12,256,1,90,Good,37999,29000
+Realme,Realme GT 2 Pro,12,256,2,85,Good,49999,26000
+Realme,Realme GT 2 Pro,8,128,3,74,Fair,44999,16000
+Realme,Realme 12 Pro,8,256,1,91,Good,26999,20000
+Realme,Realme 12 Pro,8,128,2,82,Fair,23999,14000
+Realme,Realme Narzo 60,8,128,2,83,Good,17999,11000
+Realme,Realme Narzo 60,6,128,3,72,Fair,15999,7000
+Vivo,Vivo X100 Pro,16,256,1,95,Excellent,89999,72000
+Vivo,Vivo X100 Pro,12,256,1,91,Good,84999,65000
+Vivo,Vivo X90 Pro,12,256,2,87,Good,84999,50000
+Vivo,Vivo X90 Pro,8,256,2,80,Fair,79999,38000
+Vivo,Vivo V29,8,256,1,92,Excellent,35999,28000
+Vivo,Vivo V29,8,128,2,82,Good,32999,20000
+Vivo,Vivo Y100,8,128,2,83,Good,21999,14000
+Vivo,Vivo Y100,6,128,3,72,Fair,19999,9000
+OPPO,OPPO Find X7,16,256,1,94,Excellent,79999,63000
+OPPO,OPPO Find X6 Pro,12,256,2,86,Good,84999,48000
+OPPO,OPPO Reno 11 Pro,12,256,1,92,Excellent,39999,31000
+OPPO,OPPO Reno 11 Pro,8,256,2,82,Good,36999,22000
+OPPO,OPPO A79,8,128,2,83,Good,22999,14000
+OPPO,OPPO A79,6,128,3,72,Fair,20999,9000
+Apple,iPhone 13,4,256,3,78,Good,79900,38000
+Apple,iPhone 14,6,512,2,84,Good,99900,52000
+Samsung,Galaxy S23,8,512,2,79,Good,94999,44000
+Samsung,Galaxy A54,8,128,1,90,Excellent,38999,30000
+OnePlus,OnePlus 12,16,512,1,93,Excellent,69999,56000
+Xiaomi,Redmi Note 13 Pro,12,256,1,93,Excellent,29999,23000
+Google,Pixel 8,8,128,2,85,Good,75999,48000
+Apple,iPhone 12,4,128,5,62,Poor,69900,11000
+Samsung,Galaxy S21,8,128,5,50,Poor,69999,10000
+OnePlus,OnePlus 9,8,128,5,55,Poor,49999,10000

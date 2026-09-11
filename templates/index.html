@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PriceIQ — AI Smartphone Price Prediction</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">Price<span>IQ</span></a>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#predictor">Predictor</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#predictor" class="nav-cta">Try Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HOME / HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-inner">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        AI-Powered · Machine Learning · Random Forest
+      </div>
+      <h1 class="hero-title">
+        Know Your Phone's<br>
+        <span class="gradient-text">True Resale Value</span>
+      </h1>
+      <p class="hero-sub">
+        PriceIQ uses a trained Machine Learning model to estimate the fair resale price
+        of your used smartphone — instantly, based on real specs.
+      </p>
+      <div class="hero-actions">
+        <a href="#predictor" class="btn-primary">Get Price Estimate</a>
+        <a href="#how-it-works" class="btn-ghost">See How It Works</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">8</span>
+          <span class="stat-label">Brands</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">50+</span>
+          <span class="stat-label">Models</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">7</span>
+          <span class="stat-label">Features</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">0.74</span>
+          <span class="stat-label">R² Score</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES STRIP -->
+  <section class="features-strip">
+    <div class="features-inner">
+      <div class="feature-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        <span>Random Forest Regressor</span>
+      </div>
+      <div class="feature-sep"></div>
+      <div class="feature-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+        <span>scikit-learn Pipeline</span>
+      </div>
+      <div class="feature-sep"></div>
+      <div class="feature-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        <span>Instant Prediction</span>
+      </div>
+      <div class="feature-sep"></div>
+      <div class="feature-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        <span>Input Validation</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how-section" id="how-it-works">
+    <div class="section-inner">
+      <p class="section-eyebrow">Under the Hood</p>
+      <h2 class="section-title">How PriceIQ Works</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <h3>Enter Specs</h3>
+          <p>Fill in brand, model, RAM, storage, age, battery health, and condition.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <h3>Preprocess</h3>
+          <p>OneHotEncoder converts categories. Numerical features pass through directly.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <h3>Predict</h3>
+          <p>Random Forest Regressor runs inference across 100 decision trees.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step">
+          <div class="step-num">04</div>
+          <h3>Result</h3>
+          <p>Estimated resale price is displayed instantly on the page.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PREDICTOR -->
+  <section class="predictor-section" id="predictor">
+    <div class="section-inner">
+      <p class="section-eyebrow">AI Prediction</p>
+      <h2 class="section-title">Get Your Price Estimate</h2>
+
+      {% if errors %}
+      <div class="error-box">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        <div>
+          <strong>Please fix the following:</strong>
+          <ul>{% for e in errors %}<li>{{ e }}</li>{% endfor %}</ul>
+        </div>
+      </div>
+      {% endif %}
+
+      {% if result %}
+      <div class="result-card">
+        <div class="result-glow"></div>
+        <div class="result-top">
+          <div class="result-badge">AI Estimate</div>
+          <p class="result-label">Estimated Resale Price</p>
+          <p class="result-price">₹{{ "{:,.0f}".format(result) }}</p>
+        </div>
+        <div class="result-divider"></div>
+        <div class="result-meta">
+          <div class="result-device-row">
+            <span class="result-device">{{ form_values.brand }} {{ form_values.model }}</span>
+          </div>
+          <div class="result-chips">
+            <span class="chip">{{ form_values.ram_gb }} GB RAM</span>
+            <span class="chip">{{ form_values.storage_gb }} GB Storage</span>
+            <span class="chip">{{ form_values.age_years }} yr old</span>
+            <span class="chip">🔋 {{ form_values.battery_health }}%</span>
+            <span class="chip chip-condition">{{ form_values.condition }}</span>
+          </div>
+        </div>
+        <p class="result-disclaimer">
+          ⚠ This is an AI-generated estimate. Actual market prices may vary.
+        </p>
+      </div>
+      {% endif %}
+
+      <div class="form-card">
+        <form action="/predict" method="POST" id="predict-form">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="brand">Brand</label>
+              <div class="select-wrap">
+                <select name="brand" id="brand" required>
+                  <option value="">Select Brand</option>
+                  {% for b in brands %}
+                  <option value="{{ b }}" {% if form_values and form_values.brand == b %}selected{% endif %}>{{ b }}</option>
+                  {% endfor %}
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="model">Model</label>
+              <div class="select-wrap">
+                <select name="model" id="model" required>
+                  <option value="">Select Model</option>
+                  {% if form_values and form_values.brand %}
+                    {% for m in models_by_brand.get(form_values.brand, []) %}
+                    <option value="{{ m }}" {% if form_values.model == m %}selected{% endif %}>{{ m }}</option>
+                    {% endfor %}
+                  {% endif %}
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="ram_gb">RAM (GB)</label>
+              <input type="number" name="ram_gb" id="ram_gb" min="1" max="64" step="1"
+                placeholder="e.g. 8"
+                value="{{ form_values.ram_gb if form_values else '' }}" required />
+            </div>
+            <div class="form-group">
+              <label for="storage_gb">Storage (GB)</label>
+              <input type="number" name="storage_gb" id="storage_gb" min="1" max="1024" step="1"
+                placeholder="e.g. 128"
+                value="{{ form_values.storage_gb if form_values else '' }}" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="age_years">Age (Years)</label>
+              <input type="number" name="age_years" id="age_years" min="0" max="10" step="0.5"
+                placeholder="e.g. 2"
+                value="{{ form_values.age_years if form_values else '' }}" required />
+            </div>
+            <div class="form-group">
+              <label for="battery_health">Battery Health (%)</label>
+              <input type="number" name="battery_health" id="battery_health" min="0" max="100" step="1"
+                placeholder="e.g. 88"
+                value="{{ form_values.battery_health if form_values else '' }}" required />
+            </div>
+          </div>
+
+          <div class="form-row form-row-single">
+            <div class="form-group">
+              <label for="condition">Condition</label>
+              <div class="select-wrap">
+                <select name="condition" id="condition" required>
+                  <option value="">Select Condition</option>
+                  {% for c in conditions %}
+                  <option value="{{ c }}" {% if form_values and form_values.condition == c %}selected{% endif %}>{{ c }}</option>
+                  {% endfor %}
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" class="btn-predict">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            Predict Resale Price
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TECH STACK -->
+  <section class="tech-section">
+    <div class="section-inner">
+      <p class="section-eyebrow">Built With</p>
+      <h2 class="section-title">Technology Stack</h2>
+      <div class="tech-grid">
+        <div class="tech-card">
+          <span class="tech-icon">🐍</span>
+          <h4>Python</h4>
+          <p>Core language for backend and ML</p>
+        </div>
+        <div class="tech-card">
+          <span class="tech-icon">🌐</span>
+          <h4>Flask</h4>
+          <p>Lightweight web framework</p>
+        </div>
+        <div class="tech-card">
+          <span class="tech-icon">🌲</span>
+          <h4>Random Forest</h4>
+          <p>Regression model for price prediction</p>
+        </div>
+        <div class="tech-card">
+          <span class="tech-icon">⚙️</span>
+          <h4>scikit-learn</h4>
+          <p>Pipeline, encoder, and model training</p>
+        </div>
+        <div class="tech-card">
+          <span class="tech-icon">📊</span>
+          <h4>Pandas</h4>
+          <p>Data loading and manipulation</p>
+        </div>
+        <div class="tech-card">
+          <span class="tech-icon">💾</span>
+          <h4>Joblib</h4>
+          <p>Model serialization and loading</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">Price<span>IQ</span></div>
+      <p class="footer-desc">AI-Based Used Smartphone Price Prediction — College Minor Project</p>
+      <p class="footer-note">Prices shown are AI-generated estimates based on a synthetic demo dataset. Not real market prices.</p>
+    </div>
+  </footer>
+
+  <script>
+    const modelsByBrand = {{ models_by_brand | tojson }};
+    const brandSelect = document.getElementById("brand");
+    const modelSelect = document.getElementById("model");
+    const savedModel = "{{ form_values.model if form_values else '' }}";
+
+    function updateModels() {
+      const brand = brandSelect.value;
+      const models = modelsByBrand[brand] || [];
+      modelSelect.innerHTML = '<option value="">Select Model</option>';
+      models.forEach(m => {
+        const opt = document.createElement("option");
+        opt.value = m;
+        opt.textContent = m;
+        if (m === savedModel) opt.selected = true;
+        modelSelect.appendChild(opt);
+      });
+    }
+
+    brandSelect.addEventListener("change", updateModels);
+    if (brandSelect.value) updateModels();
+
+    // Smooth scroll for nav links
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener("click", e => {
+        const target = document.querySelector(a.getAttribute("href"));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: "smooth" }); }
+      });
+    });
+
+    // Navbar scroll effect
+    const navbar = document.querySelector(".navbar");
+    window.addEventListener("scroll", () => {
+      navbar.classList.toggle("scrolled", window.scrollY > 40);
+    });
+  </script>
+
+</body>
+</html>
