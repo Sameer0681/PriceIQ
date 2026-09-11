@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # PriceIQ — AI-Based Used Smartphone Price Prediction
 
 > **"From Data to Price."**
@@ -218,7 +218,4 @@ Condition:      Good
 - Deploy to a cloud platform (AWS, Heroku)
 
 ---
-
-
-# PriceIQ
 
